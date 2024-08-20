@@ -15,7 +15,7 @@ const Settings = () => {
         <div className="mt-10 space-y-4 w-full">
           <div>
             <label className="block text-base font-semibold text-gray-100">Avatar</label>
-            <div className="sm:flex sm:w-full sm:justify-center gap-5 items-center">
+            <div className="sm:flex sm:w-full justify-start gap-5 items-center">
               <Image src="/icons/online.svg" alt="Profile" className="rounded-full" width={120} height={120} />
               <div className="gap-4 flex flex-col">
                 <Button className="w-fit">Upload new image</Button>

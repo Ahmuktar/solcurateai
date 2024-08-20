@@ -9,7 +9,7 @@ import React from 'react'
 
 const RootLayout = ({children}) => {
   return (
-    <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[320px_1fr]">
+    <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[340px_1fr]">
       <div className="hidden bg-black-1 md:block">
         <div className="flex overflow-auto h-full min-h-screen justify-between flex-col gap-2 custom-scrollbar">
           <div>

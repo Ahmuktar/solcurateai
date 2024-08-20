@@ -15,7 +15,7 @@ const Sidebar = () => {
 
   return (
     <div className="flex-1 scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar:bg-transparent scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300 scrollbar-track:!rounded dark:scrollbar-track:!bg-slate-500/[0.16] dark:scrollbar-thumb:!bg-slate-500/50 max-h-96 lg:supports-scrollbars:pr-2 lg:max-h-96">
-      <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
+      <nav className="grid items-start px-1 text-sm font-medium lg:px-1">
         {sidebarLinks.map((link) => {
           // Adjust the path to include the "/app" base path
           const fullRoute = `/app${link.route}`;
@@ -28,10 +28,11 @@ const Sidebar = () => {
               href={fullRoute}
               key={link.label}
               className={cn(
-                "flex gap-4 items-center p-4 text-white rounded-lg justify-start",
+                "flex gap-4 items-center p-4 text-white rounded-lg justify-between",
                 { "active-gradient": isActive }
               )}
             >
+              <div className="flex items-center gap-3">
               <Image
                 src={link.imgUrl}
                 alt={link.label}
@@ -41,6 +42,12 @@ const Sidebar = () => {
               <p className="text-lg font-quicksand max-lg:hidden">
                 {link.label}
               </p>
+              </div>
+              {link.status === "inactive" && 
+              <div className="main-gradient rounded-lg p-1">
+                <p className="text-white font-semibold text-[10px]">Coming soon</p>
+              </div>
+              }
             </Link>
           );
         })}
