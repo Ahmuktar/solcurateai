@@ -10,7 +10,7 @@ const InfoSection = () => {
                 <p class="font-normal text-xl">Curate AI is powered by Solana, one of the fastest and most secure blockchain platforms available. This ensures that your content creation process is not only quick but also secure, giving you peace of mind as you scale your social media strategy.</p>
             </div>
             <div class="flex items-center justify-center gap-6">
-                <Image src="/images/solana.png" width={400} height={400} />
+                <Image alt="Image" src="/images/solana.png" width={400} height={400} />
             </div>
         </div>
     </section>

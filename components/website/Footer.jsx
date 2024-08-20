@@ -9,16 +9,16 @@ const Footer = () => {
             <div class="p-4 py-16 sm:pb-12 md:flex md:justify-between">
                 <div class="flex grow flex-col gap-4">
                     <Link class="flex items-center" href="/">
-                        <Image width={200} height={200} src="/images/logo.png" class="w-[230px]" />
+                        <Image alt="Image" width={200} height={200} src="/images/logo.png" class="w-[230px]" />
                       </Link>
                     <p class="max-w-md text-white dark:text-white">SolcurateAI - Crafted with intelligence, powered by Solana.</p>
                     <div class="flex gap-3">
-                        <Link href="#"><Image width={24} height={24} src="/images/YouTube.svg" /></Link>
-                        <Link href="#"><Image width={24} height={24} src="/images/Twitter.svg" /></Link>
-                        <Link href="#"><Image width={24} height={24} src="/images/Discord.svg" /></Link>
-                        <Link href="#"><Image width={24} height={24} src="/images/Reddit.svg" /></Link>
-                        <Link href="#"><Image width={24} height={24} src="/images/GitHub.svg" /></Link>
-                        <Link href="#"><Image width={24} height={24} src="/images/Telegram.svg" /></Link>
+                        <Link href="#"><Image alt="Image" width={24} height={24} src="/images/YouTube.svg" /></Link>
+                        <Link href="#"><Image alt="Image" width={24} height={24} src="/images/Twitter.svg" /></Link>
+                        <Link href="#"><Image alt="Image" width={24} height={24} src="/images/Discord.svg" /></Link>
+                        <Link href="#"><Image alt="Image" width={24} height={24} src="/images/Reddit.svg" /></Link>
+                        <Link href="#"><Image alt="Image" width={24} height={24} src="/images/GitHub.svg" /></Link>
+                        <Link href="#"><Image alt="Image" width={24} height={24} src="/images/Telegram.svg" /></Link>
                     </div>
                     <p class="max-w-md text-white dark:text-white">Follow us on our social media channels for updates, tips, and the latest trends in AI-powered content creation</p>
                 </div>

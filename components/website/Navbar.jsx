@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div className="flex items-center">
                     {websiteLinks.map((link) => {
                         return (
-                        <Link href={link.route} className="mr-14 font-medium tracking-tight hover:text-accent-foreground">
+                        <Link key={link.label} href={link.route} className="mr-14 font-medium tracking-tight hover:text-accent-foreground">
                             <p>
                                 {link.label}
                             </p>
